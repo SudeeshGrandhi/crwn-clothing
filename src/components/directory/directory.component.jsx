@@ -5,7 +5,7 @@ const Directory = (props) => {
   return (
     <div className="directory">
       {props.state.map(function (details) {
-        return <MenuItem details={details} />;
+        return <MenuItem details={details} key={details.id} />;
       })}
     </div>
   );
